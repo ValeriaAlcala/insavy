@@ -45,10 +45,8 @@
   }
   
   /* Main */
-  video {
+  .banner img {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Esto mantiene la relaciÃ³n de aspecto 16:9 */
-    /* Altura ajustada segÃºn la relaciÃ³n de aspecto */
     max-height: 600px; /* Altura mÃ¡xima deseada */
   
   }
