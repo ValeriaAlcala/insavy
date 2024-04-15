@@ -1,0 +1,288 @@
+/* Estilos generales */
+:root {
+    --baseColor: #f2f0ea;
+    --lightblue: #D5CBE6;
+    --lightgreen: #DEDD21;
+    --white: #132417;
+  }
+  
+  body{
+    background-color: var(--baseColor);
+    margin: 0;
+  }
+  
+  main {
+    margin: 2% 6% 0% 6%;
+    padding: 0;
+    background-color: var(--baseColor);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0% 6% 0%;
+  }
+  
+  .logo img {
+    height: 55px;
+  }
+  
+  .header-right {
+    margin-right: 20px;
+  }
+  
+  .login-link {
+    text-decoration: none;
+    font-family: "Urbanist", sans-serif;
+    color: #61665C;
+    font-size: 14px;
+    border-radius: 20px;
+    border: solid 3px #61665C;
+    padding: 10px 17px;
+  }
+  
+  /* Main */
+  video {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Esto mantiene la relaciÃ³n de aspecto 16:9 */
+    /* Altura ajustada segÃºn la relaciÃ³n de aspecto */
+    max-height: 600px; /* Altura mÃ¡xima deseada */
+  
+  }
+  
+  .highlight-text {
+    padding: 20px;
+    color: var(--white);
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+  }
+  
+  .highlight-text > h1 {
+    margin: 10px;
+    font-size: 50px;
+  }
+  
+  .highlight-text > h2 {
+    text-align: center;
+    margin: 0% 15%;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  /* Slider */
+  .slider {
+    overflow: hidden;
+    max-width: 1200px; /* Ancho mÃ¡ximo del contenedor */
+    margin: 0 auto; /* Margen automÃ¡tico para centrarlo horizontalmente */
+    position: relative;
+  }
+  
+  .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 calc(33.33% - 20px); /* Ancho de cada slide, incluyendo el margen de 10px a la derecha e izquierda */
+    text-align: center;
+    margin: 0 10px; /* Margen de 10px a la derecha e izquierda */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Estilos para el contenedor de cada curso */
+  .box {
+    max-width: 300px;
+    background-color: #61665C;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Estilos para la imagen del curso */
+  .box img {
+    width: 300px; /* TamaÃ±o especÃ­fico en pÃ­xeles para el ancho */
+    height: 200px; /* TamaÃ±o especÃ­fico en pÃ­xeles para la altura */
+    object-fit: cover; /* Para que las imÃ¡genes se ajusten dentro del tamaÃ±o especificado sin distorsionar su proporciÃ³n */
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 220px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--white);
+    z-index: 999;
+    margin: 0 10px; /* Agregamos un margen horizontal para las flechas */
+  }
+  
+  .prev {
+    left: -10px;
+  }
+  
+  .next {
+    right: 30px;
+  }
+  
+  /* Estilos para el slide grande */
+  .slide.big {
+    flex: 0 0 30%; /* TamaÃ±o del slide grande */
+    font-size: 21px; /* TamaÃ±o de fuente del slide grande */
+  }
+  
+  /* TamaÃ±o de letra para h3 en el slide grande titulo*/
+  .big h3 {
+    font-size: 24px; /* TamaÃ±o de letra mÃ¡s grande para el slide grande */
+  
+  }
+  
+  h3 {
+    font-family: "Noto Serif Display", serif;
+    font-weight: 500;
+    margin: 0 ;
+    color: var(--baseColor);
+    font-size: 19px;
+  }
+  
+  /* TamaÃ±o de letra para h4 en el slide grande */
+  .big h4 {
+    /* font-size: 18px; TamaÃ±o de letra mÃ¡s grande para el slide grande */
+    margin: 10px 20px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  h4{
+    font-family: "Urbanist", sans-serif;
+    font-size: 12px;
+    margin: 10px 30px;
+    padding-bottom: 15px;
+    font-weight: 300;
+    color: var(--baseColor);
+  }
+  
+  .big h5 {
+    font-size: 11px;
+    color: var(--baseColor);
+  }
+  
+  h5 {
+    margin: 5px 0 0 0 ;
+    font-size: 9px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    color: var(--baseColor);
+  }
+  
+  /* Section */
+  .section {
+    display: flex;
+    padding: 18px;
+  }
+  
+  .section > .right {
+    margin-left: 30px;
+    padding: 0;
+    margin-top: 37px;
+  }
+  
+  .section > .right > p {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  
+  .section > .right > h2 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  
+  .left,
+  .right {
+    flex: 1;
+    align-items: center;
+  }
+  
+  .section > .left {
+    align-content: center;
+  }
+  
+  .section > .left > h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0px 30px 28px 0px;
+  }
+  
+  .section > .left > p {
+    font-size: 20px;
+    margin: 28px 46px 30px 0px;
+  }
+  
+  .section > .left > a,
+  .section > .right > a {
+    border-style: none;
+    border-radius: 9px;
+    background: var(--lightblue);
+    color: var(--white);
+    font-size: 15px;
+    text-decoration: none;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    padding: 8px 22px;
+  }
+  
+  .section > .left > a > .label,
+  .section > .right > a > .label {
+    cursor: pointer;
+  }
+  
+  .line {
+    background-color: var(--lightgreen);
+    border-radius: 8px;
+    height: 8px;
+    width: 107px;
+  }
+  
+  p,
+  h2 {
+    font-family: "Urbanist", sans-serif;
+    color: var(--white);
+  }
+  
+  .left {
+    padding-right: 20px;
+  }
+  
+  .right img,
+  .left img {
+    width: 805px;
+    height: 531px;
+    border-color: var(--white);
+    border-width: 0.5px;
+    border-style: solid;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #464E43;
+    margin: 50px -12px -12px;
+    text-align: center;
+  }
+  
+  .logo-footer{
+    width: 35px;
+    margin: 20px 10px 0 0 ;
+  }
+  
+  footer p {
+    color: var(--baseColor);
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--baseColor);
+    margin-bottom: 10px;
+  }
